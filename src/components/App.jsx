@@ -1,11 +1,13 @@
 import React from 'react';
 import Card from './Card'
 import contacts from './contacts'
+import Avatar from './Avatar'
 
 function App() {
   return (
     <div>
       <h1 className='heading'>My Contacts</h1>
+      <Avatar img='https://beamstart.com/API/v6.0/index.php?system=images&type=avatar&profileid=254394&width=960' />
       <Card
         name={contacts[0].name}
         img={contacts[0].imgURL}
